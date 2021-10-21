@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "An application developed for IOS that allows a user to sell the items laying around the house that they might no longer need",
+    "githubUrl": "https://github.com/callumreid/sellYourStuff"
   }
 }

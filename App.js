@@ -1,22 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 
 export default function App() {
+  let x = 1;
   return (
-    <View style={styles.container}>
-      <Text>Mooo</Text>
-      <Text>I'm a little cowww</Text>
+    <SafeAreaView style={styles.container}>
+      <Text
+      numberOfLines={1}
+      onPress={() => console.log('clickity clackity')}
+      >I'm a little itty bitty cowww who wants to be in an itty bitty pasture who loves to mooooooo</Text>
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: 'dodgerblue',
   },
 });
