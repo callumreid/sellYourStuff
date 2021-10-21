@@ -17,7 +17,10 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Button title='clickMe'
-      onPress={() => Alert.alert('do u like cows?', 'mooooo')}
+      onPress={() => Alert.alert('do u like cows?', 'mooooo', [
+        {text: 'yes ofc', onPress: () => console.log('goomba alert')},
+        {text: 'no i stuooopid', onPress: () => console.log('dummy dummy wah wah alert')}
+      ])}
       color='orange' />
     </SafeAreaView>
   );
